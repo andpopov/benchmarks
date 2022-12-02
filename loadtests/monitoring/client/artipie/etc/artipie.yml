@@ -13,18 +13,5 @@ meta:
   layout: org
   base_url: http://central.artipie.com/
   metrics:
-    -
-      type: log
-      interval: 5
-    -
-      type: asto
-      interval: 5 
-      storage:
-        type: fs
-        path: /etc/artipie/artipie-metrics.log
-    -
-      type: prometheus # http://{host}:{port}/prometheus/metrics
-    - 
-      type: vertx
-      endpoint: "/metrics"
-      port: 8087
+    endpoint: "/metrics/vertx" # Path of the endpoint, starting with `/`, where the metrics will be served
+    port: 8087 # Port to serve the metrics

@@ -3,6 +3,7 @@ version: "3.7"
 services:
   prometheus:
     image: prom/prometheus:v2.39.1
+    container_name: prometheus
     volumes:
       - ./conf/:/etc/prometheus/
     command:
@@ -12,12 +13,12 @@ services:
       - "9090:9090"
     extra_hosts:
       - "host.docker.internal:host-gateway"
-  artipie-test:
-    image: artipie/artipie:v0.27.6
+  artipie:
+    image: artipie/artipie:1.0-SNAPSHOT
+    container_name: artipie
     volumes:
       - "./artipie/etc:/etc/artipie"
       - "./artipie/var:/var/artipie"
-    user: $ARTIPIE_USER
     environment:
       - JVM_ARGS=
         -javaagent:/etc/artipie/jmx_prometheus_javaagent-0.17.2.jar=${JMX_AGENT}:/etc/artipie/jmx-agent.yml 
@@ -35,3 +36,13 @@ services:
       - "host.docker.internal:host-gateway"
     #profiles:
     #  - dontstart
+  grafana:
+    image: grafana/grafana:9.2.4
+    container_name: grafana
+    ports:
+      - '3000:3000'
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

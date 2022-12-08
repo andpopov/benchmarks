@@ -13,6 +13,5 @@ meta:
   layout: org
   base_url: http://central.artipie.com/
   metrics:
-    endpoint: "/artipie/metrics"
+    endpoint: "/metrics/vertx"
     port: 8087
-

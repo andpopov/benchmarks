@@ -22,13 +22,11 @@ scrape_configs:
   - job_name: "artipie_metrics"
     static_configs:
       - targets: ["host.docker.internal:8087"]
-    metrics_path: "/artipie/metrics"
+    metrics_path: "/metrics/vertx"
 
 remote_write:
-  # - url: "http://host.docker.internal:1234/receive" #telegraf
-    #basic_auth:
-
-  - url: "http://central.artipie.com:1234/receive" #telegraf
+#  - url: "http://central.artipie.com:1234/receive" #telegraf
+  - url: "http://host.docker.internal:1234/receive" #telegraf
     basic_auth:
       username: admin
       password: telegrafadmin1

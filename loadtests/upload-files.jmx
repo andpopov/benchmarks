@@ -50,27 +50,27 @@
           </elementProp>
           <elementProp name="repository.host" elementType="Argument">
             <stringProp name="Argument.name">repository.host</stringProp>
-            <stringProp name="Argument.value">${__P(repository.host,)}</stringProp>
+            <stringProp name="Argument.value">${__P(repository.host,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="repository.port" elementType="Argument">
             <stringProp name="Argument.name">repository.port</stringProp>
-            <stringProp name="Argument.value">${__P(repository.port,80)}</stringProp>
+            <stringProp name="Argument.value">${__P(repository.port,8080)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="repository.path" elementType="Argument">
             <stringProp name="Argument.name">repository.path</stringProp>
-            <stringProp name="Argument.value">${__P(repository.path,)}</stringProp>
+            <stringProp name="Argument.value">chgen/bintest</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="login" elementType="Argument">
             <stringProp name="Argument.name">login</stringProp>
-            <stringProp name="Argument.value">${__P(login,)}</stringProp>
+            <stringProp name="Argument.value">chgen</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="password" elementType="Argument">
             <stringProp name="Argument.name">password</stringProp>
-            <stringProp name="Argument.value">${__P(password,)}</stringProp>
+            <stringProp name="Argument.value">chgen</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

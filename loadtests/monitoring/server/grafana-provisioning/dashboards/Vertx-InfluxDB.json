@@ -154,6 +154,12 @@
         "type": "influxdb",
         "uid": "P5697886F9CA74929"
       },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -254,7 +260,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:330",
-          "format": "none",
+          "format": "decbytes",
           "logBase": 1,
           "show": true
         },
@@ -1122,7 +1128,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:330",
-          "format": "none",
+          "format": "s",
           "logBase": 1,
           "show": true
         },
@@ -1494,7 +1500,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:330",
-          "format": "none",
+          "format": "s",
           "logBase": 1,
           "show": true
         },
@@ -1618,7 +1624,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:330",
-          "format": "none",
+          "format": "s",
           "logBase": 1,
           "show": true
         },
@@ -1797,6 +1803,6 @@
   "timezone": "",
   "title": "Vertx metrix (InfluxDB)",
   "uid": "UvsNGuK4k",
-  "version": 1,
+  "version": 3,
   "weekStart": ""
 }

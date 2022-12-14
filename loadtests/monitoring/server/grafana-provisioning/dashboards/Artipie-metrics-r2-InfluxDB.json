@@ -275,7 +275,7 @@
           "refId": "A"
         }
       ],
-      "title": "HTTP requests counter",
+      "title": "Requests counter",
       "type": "timeseries"
     },
     {
@@ -360,7 +360,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_response_send_seconds",
+      "title": "Response.send execution time",
       "type": "timeseries"
     },
     {
@@ -445,7 +445,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_connection_accept_seconds",
+      "title": "Connection.accept execution time",
       "type": "timeseries"
     },
     {
@@ -530,7 +530,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_slice_response_seconds",
+      "title": "Slice.response execution time",
       "type": "timeseries"
     },
     {
@@ -615,7 +615,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_value_seconds",
+      "title": "Time to read value from storage",
       "type": "timeseries"
     },
     {
@@ -700,7 +700,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_save_seconds",
+      "title": "Time to save storage value",
       "type": "timeseries"
     },
     {
@@ -785,7 +785,7 @@
           "refId": "A"
         }
       ],
-      "title": "Storage content body size and chunks",
+      "title": "Storage value size and chunks",
       "type": "timeseries"
     },
     {
@@ -871,7 +871,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_exists_seconds",
+      "title": "Storage exists operation time",
       "type": "timeseries"
     },
     {
@@ -956,7 +956,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_move_seconds",
+      "title": "Storage move operation time",
       "type": "timeseries"
     },
     {
@@ -1041,7 +1041,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_list_seconds",
+      "title": "Storage list operation time",
       "type": "timeseries"
     },
     {
@@ -1126,7 +1126,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_delete_seconds",
+      "title": "Storage delete operation time",
       "type": "timeseries"
     },
     {
@@ -1211,7 +1211,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_metadata_seconds",
+      "title": "Storage metadata operation time",
       "type": "timeseries"
     },
     {
@@ -1296,7 +1296,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_exclusively_seconds",
+      "title": "Storage exclusively operation seconds",
       "type": "timeseries"
     },
     {
@@ -1381,7 +1381,7 @@
           "refId": "A"
         }
       ],
-      "title": "artipie_storage_deleteAll_seconds",
+      "title": "Storage deleteAll operation seconds",
       "type": "timeseries"
     }
   ],
